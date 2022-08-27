@@ -10,6 +10,9 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import com.example.myapplication.databinding.ActivitySplashBinding
+import android.animation.Animator
+import android.util.Log
+import android.view.animation.Animation
 
 class SplashActivity : AppCompatActivity() {
 
@@ -20,6 +23,26 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+        binding.splashAnimation.playAnimation()
+
+        binding.splashAnimation.addAnimatorListener(object: Animator.AnimatorListener{
+            override fun onAnimationStart(animation: Animation?){
+
+            }
+            override fun onAnimationEnd(animation: Animation?){
+                Log.d(tag:"hola", msg:"mundo")
+            }
+            override fun onAnimationCancel(animation: Animation?){
+
+            }
+            override fun onAnimationRepeat(animation: Animation?){
+
+            }
+        })
     }
 
 }
