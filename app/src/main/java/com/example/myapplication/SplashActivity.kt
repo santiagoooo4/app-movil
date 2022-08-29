@@ -30,17 +30,21 @@ class SplashActivity : AppCompatActivity() {
         binding.splashAnimation.playAnimation()
 
         binding.splashAnimation.addAnimatorListener(object: Animator.AnimatorListener{
-            override fun onAnimationStart(animation: Animation?){
 
+            override fun onAnimationStart(p0: Animator?) {
+                TODO("Not yet implemented")
             }
-            override fun onAnimationEnd(animation: Animation?){
-                Log.d(tag:"hola", msg:"mundo")
-            }
-            override fun onAnimationCancel(animation: Animation?){
 
+            override fun onAnimationEnd(p0: Animator?) {
+                TODO("Not yet implemented")
             }
-            override fun onAnimationRepeat(animation: Animation?){
 
+            override fun onAnimationCancel(p0: Animator?) {
+                TODO("Not yet implemented")
+            }
+
+            override fun onAnimationRepeat(p0: Animator?) {
+                TODO("Not yet implemented")
             }
         })
     }
