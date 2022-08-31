@@ -16,35 +16,30 @@ import android.view.animation.Animation
 
 class SplashActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivitySplashBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
     }
 
     override fun onStart() {
         super.onStart()
         binding.splashAnimation.playAnimation()
-
         binding.splashAnimation.addAnimatorListener(object: Animator.AnimatorListener{
 
             override fun onAnimationStart(p0: Animator?) {
-                TODO("Not yet implemented")
             }
 
             override fun onAnimationEnd(p0: Animator?) {
-                TODO("Not yet implemented")
+                Log.d ( "nothin", "else matters")
             }
 
             override fun onAnimationCancel(p0: Animator?) {
-                TODO("Not yet implemented")
             }
 
             override fun onAnimationRepeat(p0: Animator?) {
-                TODO("Not yet implemented")
             }
         })
     }
