@@ -16,8 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="@dimen/top_margin_logo"
-        android:src="@drawable/LogoApp"
-        android:contentDescription="Logo Productivity"/>
+        android:src="@drawable/logoapp"
+        android:contentDescription="Logo Produc tivity"/>
 
     <fragment
         android:id="@+id/nav_login_fragment"

@@ -11,6 +11,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.example.myapplication.databinding.ActivitySplashBinding
 import android.animation.Animator
+import android.content.Intent
 import android.util.Log
 import android.view.animation.Animation
 
@@ -33,7 +34,9 @@ class SplashActivity : AppCompatActivity() {
             }
 
             override fun onAnimationEnd(p0: Animator?) {
-                Log.d ( "nothin", "else matters")
+                val intent =Intent(applicationContext, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
             }
 
             override fun onAnimationCancel(p0: Animator?) {
