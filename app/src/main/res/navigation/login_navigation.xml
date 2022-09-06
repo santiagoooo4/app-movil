@@ -9,5 +9,5 @@
         android:id="@+id/logoFragment"
         android:name="com.example.myapplication.LogoFragment"
         android:label="fragment_logo"
-        tools:layout="@layout/fragment_logo" />
+        tools:layout="@layout/fragment_login" />
 </navigation>

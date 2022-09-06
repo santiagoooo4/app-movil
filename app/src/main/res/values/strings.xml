@@ -7,4 +7,5 @@
     <string name="iniciar_sesion_login_button">iniciar sesion</string>
     <string name="olvidaste_la_contrase_login_layout">¿Olvidaste la contraseña?</string>
     <string name="app_logo">App Logo</string>
+    <string name="button_login_label">Ingresar</string>
 </resources>
