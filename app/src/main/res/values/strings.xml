@@ -8,4 +8,6 @@
     <string name="olvidaste_la_contrase_login_layout">¿Olvidaste la contraseña?</string>
     <string name="app_logo">App Logo</string>
     <string name="button_login_label">Ingresar</string>
+    <string name="login_label_no_cuenta">No tengo cuenta</string>
+    <string name="fragment_login_label_create_cuenta">Crear una</string>
 </resources>

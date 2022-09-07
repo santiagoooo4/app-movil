@@ -93,9 +93,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/materialCardView"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fragment_login_label_no_cuenta"
         android:text="@string/button_login_label">
     </com.google.android.material.button.MaterialButton>
 
-    
+    <com.google.android.material.textview.MaterialTextView
+        app:layout_constraintVertical_chainStyle="packed"
+        android:id="@+id/fragment_login_label_no_cuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_label_no_cuenta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fragment_login_label_create_cuenta"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_login_bottom"
+        android:layout_marginHorizontal="@dimen/default_margin"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fragment_login_label_create_cuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/fragment_login_label_no_cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fragment_login_label_no_cuenta"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_login_label_no_cuenta"
+        android:text="@string/fragment_login_label_create_cuenta"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
