@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.myapplication.databinding.FragmentLoginBinding
 
-class LogoFragment : Fragment() {
+class LoginFragment : Fragment() {
 
     private var _binding: FragmentLoginBinding? = null
     private val binding: FragmentLoginBinding get() = _binding!!
@@ -20,4 +20,12 @@ class LogoFragment : Fragment() {
         // Inflate the layout for this fragment
         return binding.root
     }
+
+//    override fun onStart() {
+//        super.onStart()
+//
+//        binding.fragmentLoginBottom.setOnClickListener {
+//            if (!binding.loginEmailLayout.text.toString().isValidEmail())
+//        }
+//    }
 }
