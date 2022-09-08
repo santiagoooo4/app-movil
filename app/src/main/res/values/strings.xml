@@ -10,4 +10,14 @@
     <string name="button_login_label">Ingresar</string>
     <string name="login_label_no_cuenta">No tengo cuenta</string>
     <string name="fragment_login_label_create_cuenta">Crear una</string>
+    <string name="hint_name">Nombre</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="hint_genero">Seleccione su Genero:</string>
+    <string name="already_have_acount">Ya tienes cuenta</string>
+    <string name="error_email">Correo no valido</string>
+    <string name="invalid_password">Password Invalido</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="ingresa_aqu">Ingresa aquí</string>
+    <string name="otro">otro</string>
 </resources>

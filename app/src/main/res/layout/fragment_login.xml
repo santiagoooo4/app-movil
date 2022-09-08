@@ -37,7 +37,7 @@
 
 
                 <com.google.android.material.textfield.TextInputEditText
-
+                    android:id="@+id/login_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress">
@@ -62,6 +62,7 @@
 
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/loginPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -112,14 +113,14 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/fragment_login_label_create_cuenta"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/fragment_login_label_no_cuenta"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/fragment_login_label_no_cuenta"
-        app:layout_constraintBottom_toBottomOf="@id/fragment_login_label_no_cuenta"
         android:text="@string/fragment_login_label_create_cuenta"
-        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+        app:layout_constraintBottom_toBottomOf="@id/fragment_login_label_no_cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragment_login_label_no_cuenta"
+        app:layout_constraintTop_toTopOf="@+id/fragment_login_label_no_cuenta" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
