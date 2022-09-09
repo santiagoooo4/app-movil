@@ -5,19 +5,20 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.myapplication.databinding.FragmentRegisterBinding
+import com.example.myapplication.databinding.FragmentToDoBinding
 
 
-class RegisterFragment : Fragment() {
+class ToDoFragment : Fragment() {
 
-    private var _binding: FragmentRegisterBinding? = null
-    private val binding: FragmentRegisterBinding get() = _binding!!
+    private var _binding: FragmentToDoBinding? = null
+    private val binding: FragmentToDoBinding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentRegisterBinding.inflate(inflater, container, false)
+        _binding = FragmentToDoBinding.inflate(inflater, container, false)
         return binding.root
     }
+
 }

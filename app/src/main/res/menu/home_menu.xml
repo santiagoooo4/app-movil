@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dailyFragment"
+        android:icon="@drawable/ic_view_day_fill0_wght400_grad0_opsz48"
+        android:title="@string/daily_label"
+        />
+    <item
+        android:id="@+id/monthlyFragment"
+        android:icon="@drawable/ic_calendar_month_fill0_wght400_grad0_opsz48"
+        android:title="@string/monthly_label"
+        />
+    <item
+        android:id="@+id/toDoFragment"
+        android:icon="@drawable/ic_checklist_fill0_wght400_grad0_opsz48"
+        android:title="@string/toDo_label"
+        />
+    <item
+        android:id="@+id/alarmsFragment"
+        android:icon="@drawable/ic_alarm_on_fill0_wght400_grad0_opsz48"
+        android:title="@string/alarms_label"
+        />
+</menu>

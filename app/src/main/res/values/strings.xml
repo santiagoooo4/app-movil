@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">test_app</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="email_hint">Correo Electronico</string>
     <string name="password_hint">Contraseña</string>
@@ -20,4 +19,11 @@
     <string name="femenino">Femenino</string>
     <string name="ingresa_aqu">Ingresa aquí</string>
     <string name="otro">otro</string>
+    <string name="home_label">Home</string>
+    <string name="daily_label">Vista Diaria</string>
+    <string name="monthly_label">Vista Mensual</string>
+    <string name="alarms_label">Alarmas</string>
+    <string name="toDo_label">Tareas</string>
+
+
 </resources>

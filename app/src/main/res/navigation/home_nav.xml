@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/alarmsFragment">
+
+    <fragment
+        android:id="@+id/alarmsFragment"
+        android:name="com.example.myapplication.AlarmsFragment"
+        android:label="@string/alarms_label"
+        tools:layout="@layout/fragment_alarms" />
+    <fragment
+        android:id="@+id/dailyFragment"
+        android:name="com.example.myapplication.DailyFragment"
+        android:label="@string/daily_label"
+        tools:layout="@layout/fragment_daily" />
+    <fragment
+        android:id="@+id/monthlyFragment"
+        android:name="com.example.myapplication.MonthlyFragment"
+        android:label="@string/monthly_label"
+        tools:layout="@layout/fragment_monthly" />
+    <fragment
+        android:id="@+id/toDoFragment"
+        android:name="com.example.myapplication.ToDoFragment"
+        android:label="@string/toDo_label"
+        tools:layout="@layout/fragment_to_do" />
+</navigation>
