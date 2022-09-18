@@ -23,11 +23,11 @@
     <string name="location_label">Ubicacion</string>
     <string name="profile_label">Mi Perfil</string>
     <string name="specialist_label">Especialistas</string>
-<<<<<<< HEAD
+
     <string name="profile_fragment_button_out">Cerrar Sesión</string>
-=======
+
     <string name="banner_title">CAMBIA TU VIDA PARA MEJOR</string>
     <string name="home_text_subtitle">Agenda una cita y te ayudaremos con el problema que te enfrentes</string>
     <string name="nuestros_servicios">Nuestros Servicios</string>
->>>>>>> 2841d970dc9cc1e66dff428db60c550e6f6e4286
+
 </resources>
