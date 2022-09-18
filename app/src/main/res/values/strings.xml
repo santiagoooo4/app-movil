@@ -21,6 +21,7 @@
     <string name="recuperar_contrase_a">Recuperar Contraseña</string>
     <string name="home">Home</string>
     <string name="location_label">Ubicacion</string>
-    <string name="profile_label">Perfil</string>
+    <string name="profile_label">Mi Perfil</string>
     <string name="specialist_label">Especialistas</string>
+    <string name="profile_fragment_button_out">Cerrar Sesión</string>
 </resources>

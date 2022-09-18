@@ -11,5 +11,7 @@
     <dimen name="cornerSizeLargeComponent">25dp</dimen>
     <dimen name="service_icon_size">64dp</dimen>
     <dimen name="big_margin">32dp</dimen>
-    <dimen name="default_text">16sp</dimen>
+    <dimen name="default_text">16dp</dimen>
+    <dimen name="banner_size">168dp</dimen>
+
 </resources>

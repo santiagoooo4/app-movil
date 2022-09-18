@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import com.example.minticaplication.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
-    // TODO: Rename and change types of parameters
     private var _binding: FragmentProfileBinding? = null
     private val binding: FragmentProfileBinding get() = _binding!!
 

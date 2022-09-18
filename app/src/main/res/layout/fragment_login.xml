@@ -89,7 +89,8 @@
         app:layout_constraintTop_toBottomOf="@id/up_material_card"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@id/fragment_login_label_no_cuenta"
-        android:text="@string/ingresar">
+        android:text="@string/ingresar"
+        android:textColor="@color/white">
     </com.google.android.material.button.MaterialButton>
 
     <com.google.android.material.textview.MaterialTextView
