@@ -7,13 +7,14 @@
     tools:context=".WelcomeActivity">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/welcome_animation"
+        android:id="@+id/welcomeAnimation"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:lottie_rawRes="@raw/welcome_heart"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_rawRes="@raw/welcome_animation"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

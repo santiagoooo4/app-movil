@@ -3,14 +3,13 @@ package com.example.minticaplication
 import android.animation.Animator
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.ui.AppBarConfiguration
+//import androidx.navigation.ui.AppBarConfiguration
 import com.example.minticaplication.databinding.ActivityWelcomeBinding
-import java.util.*
+
 
 class WelcomeActivity : AppCompatActivity() {
-    private lateinit var appBarConfiguration: AppBarConfiguration
+//    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityWelcomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
