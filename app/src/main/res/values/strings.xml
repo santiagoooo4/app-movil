@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">MinTicAplication</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="contentDescription_logo">Logo de aplicación</string>
     <string name="hint_email">Correo Electronic</string>
@@ -23,11 +22,10 @@
     <string name="location_label">Ubicacion</string>
     <string name="profile_label">Mi Perfil</string>
     <string name="specialist_label">Especialistas</string>
-
     <string name="profile_fragment_button_out">Cerrar Sesión</string>
-
     <string name="banner_title">CAMBIA TU VIDA PARA MEJOR</string>
     <string name="home_text_subtitle">Agenda una cita y te ayudaremos con el problema que te enfrentes</string>
     <string name="nuestros_servicios">Nuestros Servicios</string>
-
+    <string name="item_service_paragraph">Los mejores especialistas en medicina general</string>
+    <string name="general">General</string>
 </resources>
