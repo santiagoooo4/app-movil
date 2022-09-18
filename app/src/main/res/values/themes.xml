@@ -8,7 +8,7 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/secundario</item>
         <item name="colorSecondaryVariant">@color/varianteSecundaria</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/grey</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
@@ -34,6 +34,12 @@
     <style name="ShapeAppearance.MinTicAplication.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">@dimen/cornerSizeSmallComponent</item>
+    </style>
+
+    <style name="textPrmary.MinTicAplication" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/cornerSizeMediumComponent</item>
+        <item name="android:textColor">@color/primario</item>
+
     </style>
 
     <style name="ShapeAppearance.MinTicAplication.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">

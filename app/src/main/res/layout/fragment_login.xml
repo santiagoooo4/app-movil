@@ -11,7 +11,7 @@
         android:id="@+id/up_material_card"
         android:layout_width="@dimen/auto"
         android:layout_height="wrap_content"
-       app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_chainStyle="spread_inside"
         android:layout_marginHorizontal="@dimen/default_margin"
         android:layout_marginTop="@dimen/default_margin"
         app:cardElevation="@dimen/default_elevation"
