@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_size">150dp</dimen>
+    <dimen name="margin_top_logo">40dp</dimen>
+    <dimen name="auto">0dp</dimen>
+    <dimen name="default_margin">10dp</dimen>
+    <dimen name="default_elevation">16dp</dimen>
+    <dimen name="cornerSizeSmallComponent">10dp</dimen>
+    <dimen name="cornerSizeMediumComponent">20dp</dimen>
+    <dimen name="cornerSizeLargeComponent">25dp</dimen>
+</resources>

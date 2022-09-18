@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MinTicAplication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contentDescription_logo">Logo de aplicación</string>
+    <string name="hint_email">Correo Electronic</string>
+    <string name="Password_hint">Password</string>
+    <string name="forgot_passwd">olvidaste la contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="no_tengo_cuenta">No tengo cuenta</string>
+    <string name="crear_una">Crear una</string>
+    <string name="hint_name">Nombre</string>
+    <string name="genero">Seleccione su genero</string>
+    <string name="masculino_gen">masculino</string>
+    <string name="femenino_gen">femenino</string>
+    <string name="_gen">otro</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="ya_tienes_cuenta">Ya tienes cuenta</string>
+    <string name="ingresa_aqu">Ingresa aquí</string>
+    <string name="crear_cuenta_">Crear cuenta</string>
+    <string name="recuperar_contrase_a">Recuperar Contraseña</string>
+    <string name="home">Home</string>
+    <string name="location_label">Ubicacion</string>
+    <string name="profile_label">Perfil</string>
+    <string name="specialist_label">Especialistas</string>
+</resources>

@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MinTicAplication" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorPrimaryVariant">@color/varianteprimaria</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secundario</item>
+        <item name="colorSecondaryVariant">@color/varianteSecundaria</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        
+        
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MinTicAplication.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MinTicAplication.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MinTicAplication.LargeComponent</item>
+    </style>
+
+    <!-- estilo para no presentar tool bar -->
+    <style name="Theme.MinTicAplication.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MinTicAplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MinTicAplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    
+    <!-- Definicion propiedades personalizadas para los estilos -->
+    <style name="ShapeAppearance.MinTicAplication.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/cornerSizeSmallComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.MinTicAplication.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/cornerSizeMediumComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.MinTicAplication.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/cornerSizeLargeComponent</item>
+    </style>
+
+
+
+</resources>
