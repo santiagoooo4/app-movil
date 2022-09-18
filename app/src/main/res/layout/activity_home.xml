@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <!--Configuracon del toolbar (barra superios) -->
+        <!--Configuracon del toolbar (barra superior) -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/home_toolbar"
             android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
-
+    <!--Configuracon del fragmento de las actividades-->
     <androidx.core.widget.NestedScrollView
         android:layout_width="@dimen/auto"
         android:layout_height="@dimen/auto"
@@ -43,6 +43,7 @@
         </fragment>
     </androidx.core.widget.NestedScrollView>
 
+    <!--Configuracion del bottom navigation-->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/Home_menu_navigation"
         android:layout_width="@dimen/auto"

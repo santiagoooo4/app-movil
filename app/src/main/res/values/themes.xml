@@ -46,6 +46,21 @@
         <item name="cornerSize">@dimen/cornerSizeLargeComponent</item>
     </style>
 
+    <!-- apariencia para el Titulo del banner home activity-->
+    <style name="Title.Mintic" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:textColor">@color/primario</item>
+        <item name="android:textSize">@dimen/title_size</item>
+    </style>
+
+    <style name="subTitle.Mintic." parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">@color/textoSecundarop   </item>
+        <item name="android:textSize">@dimen/subtitle_size</item>
+    </style>
+
+    <style name="serviceList.Mintic." parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">@color/textoPrimario</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
 
 
 </resources>

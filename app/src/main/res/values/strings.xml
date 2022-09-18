@@ -23,4 +23,7 @@
     <string name="location_label">Ubicacion</string>
     <string name="profile_label">Perfil</string>
     <string name="specialist_label">Especialistas</string>
+    <string name="banner_title">CAMBIA TU VIDA PARA MEJOR</string>
+    <string name="home_text_subtitle">Agenda una cita y te ayudaremos con el problema que te enfrentes</string>
+    <string name="nuestros_servicios">Nuestros Servicios</string>
 </resources>
