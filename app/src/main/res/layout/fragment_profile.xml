@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginVertical="@dimen/big_margin"
-        app:shapeAppearanceOverlay="@style/round_image"
+        android:src="@drawable/profile2"
         />
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/profile_fragment_name"
@@ -39,7 +39,7 @@
         style="@style/textPrmary.MinTicAplication"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/profile_bottom_out"
+        android:id="@+id/profile_bottom_logout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/default_margin"
