@@ -10,12 +10,12 @@
         android:id="@+id/fragment_home_banner"
         android:layout_width="@dimen/auto"
         android:layout_height="@dimen/banner_size"
-        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/banner900x360"
-        android:scaleType="fitXY">
-    </com.google.android.material.imageview.ShapeableImageView>
+        tools:ignore="ImageContrastCheck"></com.google.android.material.imageview.ShapeableImageView>
 
     <TextView
         android:id="@+id/fragment_home_title"
@@ -34,13 +34,14 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/big_margin"
         android:layout_marginVertical="@dimen/big_margin"
+        android:gravity="center"
         android:text="@string/home_text_subtitle"
         android:textAppearance="@style/subTitle.Mintic."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fragment_home_title"
-        android:gravity="center"/>
-luisluissss
+        tools:ignore="TextContrastCheck" />
+
     <TextView
         android:id="@+id/fragment_home_service_list"
         android:layout_width="@dimen/auto"
@@ -54,16 +55,16 @@ luisluissss
         android:textAppearance="@style/serviceList.Mintic."/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_home_recycler"
         android:layout_width="@dimen/auto"
         android:layout_height="@dimen/auto"
+        android:paddingHorizontal="@dimen/small_margin"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fragment_home_service_list"
-        app:layout_constraintVertical_bias="0.0"
-        tools:listitem="@layout/item_service"
-        android:paddingHorizontal="@dimen/small_margin"
-        tools:itemCount="10"
-        />
+        tools:itemCount="8"
+        tools:listitem="@layout/item_service" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

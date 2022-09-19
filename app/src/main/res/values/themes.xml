@@ -36,8 +36,8 @@
         <item name="cornerSize">@dimen/cornerSizeSmallComponent</item>
     </style>
 
-    <style name="textPrmary.MinTicAplication" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="android:textSize">@dimen/cornerSizeMediumComponent</item>
+    <style name="textPrimary.MinTicAplication" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/default_text</item>
         <item name="android:textColor">@color/primario</item>
 
     </style>

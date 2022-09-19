@@ -28,4 +28,9 @@
     <string name="nuestros_servicios">Nuestros Servicios</string>
     <string name="item_service_paragraph">Los mejores especialistas en medicina general</string>
     <string name="general">General</string>
+    <string name="specialist_tittle">Especialidades</string>
+    <string name="specialits_subtittle">Los Mejores especialistas en todas las areas</string>
+    <string name="search">Buscar</string>
+    <string name="generic_specialist_title">"Nuestros Especialistas</string>
+    <string name="generic_specialist_subtitle">"Agenda una cita con la especialidad de tu preferencia"</string>
 </resources>

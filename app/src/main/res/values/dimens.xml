@@ -16,6 +16,7 @@
     <dimen name="service_icon_size">64dp</dimen>
     <dimen name="big_margin">32dp</dimen>
     <dimen name="default_text">16sp</dimen>
+    <dimen name="tiny_text">8sp</dimen>
     <dimen name="medium_margin">16dp</dimen>
     <dimen name="tiny_padding">4dp</dimen>
 </resources>

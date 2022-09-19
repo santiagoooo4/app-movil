@@ -1,14 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".EspcialistFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/fragment_specialist_banner"
+        android:layout_width="@dimen/auto"
+        android:layout_height="@dimen/banner_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/especialistas"
+        android:scaleType="fitXY"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/fragment_specialist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin"
+        android:text="@string/specialist_tittle"
+        android:textAppearance="@style/Title.Mintic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_specialist_banner" />
+
+    <TextView
+        android:id="@+id/fragment_specialist_subtitle"
+        android:layout_width="@dimen/auto"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/big_margin"
+        android:layout_marginVertical="@dimen/big_margin"
+        android:gravity="center"
+        android:text="@string/specialits_subtittle"
+        android:textAppearance="@style/subTitle.Mintic."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_specialist_title"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/fragment_specialist_tittle_list"
+        android:layout_width="@dimen/auto"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/big_margin"
+        android:layout_marginVertical="@dimen/big_margin"
+        android:gravity="left"
+        android:text="@string/nuestros_servicios"
+        android:textAppearance="@style/subTitle.Mintic."
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_specialist_subtitle"
+        tools:ignore="TextContrastCheck"
+        tools:visibility="visible"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_specialist_subtitle">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_specialist_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginHorizontal="@dimen/big_margin"
+            android:layout_marginVertical="@dimen/big_margin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/fragment_specialist_autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:hint="@string/search"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_specialist_recycler"
+        android:layout_width="@dimen/auto"
+        android:layout_height="@dimen/auto"
+        android:paddingHorizontal="@dimen/small_margin"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_specialist_tittle_list"
+        tools:itemCount="8"
+        tools:listitem="@layout/item_doctor">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

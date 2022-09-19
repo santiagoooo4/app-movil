@@ -57,7 +57,8 @@
         app:layout_constraintTop_toBottomOf="@id/fragment_forgot_card"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@id/fragment_forgot_label_no_tienes_cuenta"
-        android:text="Recuperar Contraseña">
+        android:text="Recuperar Contraseña"
+        android:textColor="@color/white">
     </com.google.android.material.button.MaterialButton>
 
     <com.google.android.material.textview.MaterialTextView

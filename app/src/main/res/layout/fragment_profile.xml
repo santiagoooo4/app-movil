@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginVertical="@dimen/default_margin"
         tools:text="Nombre Apellido"
-        style="@style/textPrmary.MinTicAplication"/>
+        style="@style/textPrimary.MinTicAplication"/>
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/profile_fragment_email"
         android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginVertical="@dimen/default_margin"
         tools:text="exampleEmail@algo.com"
-        style="@style/textPrmary.MinTicAplication"/>
+        style="@style/textPrimary.MinTicAplication"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/profile_bottom_out"
@@ -50,7 +50,5 @@
         android:text="@string/profile_fragment_button_out"
         android:textColor="@color/white">
     </com.google.android.material.button.MaterialButton>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
