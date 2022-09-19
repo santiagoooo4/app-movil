@@ -19,4 +19,5 @@
     <dimen name="tiny_text">8sp</dimen>
     <dimen name="medium_margin">16dp</dimen>
     <dimen name="tiny_padding">4dp</dimen>
+    <dimen name="stroke">3dp</dimen>
 </resources>
