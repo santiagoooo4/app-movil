@@ -1,5 +1,6 @@
 package com.example.minticaplication
 
+import android.Manifest
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -12,8 +13,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.minticaplication.databinding.FragmentProfileBinding
 import com.google.android.material.snackbar.Snackbar
-import java.util.jar.Manifest
-import android.Manifest.permission
+
 
 
 class ProfileFragment : Fragment() {
@@ -23,7 +23,7 @@ class ProfileFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)// Inflate the layout for this fragment
         return binding.root
     }
@@ -37,10 +37,10 @@ class ProfileFragment : Fragment() {
             requireActivity().finish()
         }
 
-        binding.profileFragmentImage.setOnClickListener {
-//            if (this.checkPermission(Manifest.permission.CAMERA, TAKE_PICTURE)) {
-//                openCamera()
-//            }
+        binding.profileBottomCamara.setOnClickListener {
+            if (this.checkPermission(Manifest.permission.CAMERA, TAKE_PICTURE)) {
+                openCamera()
+            }
         }
     }
 
@@ -53,7 +53,7 @@ class ProfileFragment : Fragment() {
         if (requestCode == CAMERA_PERMISSION && grantResults[0] == PackageManager.PERMISSION_GRANTED){
             openCamera()
         } else {
-            Snackbar.make(binding.root, "@string/no_pemission", Snackbar.LENGTH_LONG).show()
+            Snackbar.make(binding.root, "Permiso no otorgado", Snackbar.LENGTH_LONG).show()
         }
     }
 

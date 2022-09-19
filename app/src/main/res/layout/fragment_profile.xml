@@ -15,7 +15,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginVertical="@dimen/big_margin"
-        android:src="@drawable/profile2"
+        android:src="@drawable/profile"
+        app:strokeWidth="@dimen/stroke"
+        app:strokeColor="@color/grey"
+        app:shapeAppearance="@style/round_image"
+        android:scaleType="centerCrop"
+
         />
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/profile_fragment_name"
@@ -27,6 +32,7 @@
         android:layout_marginVertical="@dimen/default_margin"
         tools:text="Nombre Apellido"
         style="@style/textPrmary.MinTicAplication"/>
+
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/profile_fragment_email"
         android:layout_width="wrap_content"
@@ -51,6 +57,14 @@
         android:textColor="@color/white">
     </com.google.android.material.button.MaterialButton>
 
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/profile_bottom_camara"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="@id/profile_fragment_image"
+    app:layout_constraintBottom_toBottomOf="@id/profile_fragment_image"
+    app:srcCompat="@drawable/ic_baseline_camera_alt_24"
+    android:backgroundTint="@color/varianteprimaria"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
