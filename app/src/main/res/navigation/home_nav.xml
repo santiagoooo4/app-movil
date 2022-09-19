@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_espcialistFragment"
-            app:destination="@id/espcialistFragment"
+            app:destination="@id/specialistFragment"
             app:launchSingleTop="true"
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true" />
@@ -28,7 +28,7 @@
         android:label="@string/profile_label"
         tools:layout="@layout/fragment_profile" />
     <fragment
-        android:id="@+id/espcialistFragment"
+        android:id="@+id/specialistFragment"
         android:name="com.example.minticaplication.EspcialistFragment"
         android:label="@string/specialist_tittle"
         tools:layout="@layout/fragment_espcialist">
