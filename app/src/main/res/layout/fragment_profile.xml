@@ -20,7 +20,7 @@
         app:strokeColor="@color/grey"
         app:shapeAppearance="@style/round_image"
         android:scaleType="centerCrop"
-
+        android:padding="@dimen/stroke"
         />
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/profile_fragment_name"
@@ -64,7 +64,8 @@
     app:layout_constraintEnd_toEndOf="@id/profile_fragment_image"
     app:layout_constraintBottom_toBottomOf="@id/profile_fragment_image"
     app:srcCompat="@drawable/ic_baseline_camera_alt_24"
-    android:backgroundTint="@color/varianteprimaria"/>
+    android:backgroundTint="@color/varianteprimaria"
+    app:tint="@color/white"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

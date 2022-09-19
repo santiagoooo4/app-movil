@@ -56,5 +56,6 @@
         app:menu="@menu/home_menu"
         app:labelVisibilityMode="labeled"
         style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        app:itemTextColor="@color/white"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
