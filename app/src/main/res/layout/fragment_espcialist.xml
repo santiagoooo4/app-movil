@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".EspcialistFragment">
+    tools:context=".EspcialistFragment"
+    android:background="@drawable/backgroundgreentheme">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/fragment_specialist_banner"
@@ -32,7 +33,7 @@
         android:layout_width="@dimen/auto"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/big_margin"
-        android:layout_marginVertical="@dimen/big_margin"
+        android:layout_marginVertical="@dimen/medium_margin"
         android:gravity="center"
         android:text="@string/specialits_subtittle"
         android:textAppearance="@style/subTitle.Mintic."
@@ -41,21 +42,6 @@
         app:layout_constraintTop_toBottomOf="@+id/fragment_specialist_title"
         tools:ignore="TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/fragment_specialist_tittle_list"
-        android:layout_width="@dimen/auto"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/big_margin"
-        android:layout_marginVertical="@dimen/big_margin"
-        android:gravity="left"
-        android:text="@string/nuestros_servicios"
-        android:textAppearance="@style/subTitle.Mintic."
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_specialist_subtitle"
-        tools:ignore="TextContrastCheck"
-        tools:visibility="visible"/>
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -65,22 +51,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fragment_specialist_subtitle">
 
+        <TextView
+            android:id="@+id/fragment_specialist_tittle_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/big_margin"
+            android:layout_marginVertical="@dimen/medium_margin"
+            android:gravity="left"
+            android:text="@string/nuestros_especialistas"
+            android:textAppearance="@style/subTitle.Mintic."
+            android:textColor="@color/primario"
+
+            android:visibility="visible"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            tools:visibility="visible">
+
+        </TextView>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/fragment_specialist_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="gone"
             tools:visibility="visible"
-            android:layout_marginHorizontal="@dimen/big_margin"
-            android:layout_marginVertical="@dimen/big_margin"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+            android:layout_marginHorizontal="@dimen/medium_margin"
+            android:layout_marginVertical="@dimen/medium_margin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
 
             <AutoCompleteTextView
                 android:id="@+id/fragment_specialist_autocomplete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/search"
-                android:inputType="none" />
+                android:inputType="none"
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -95,7 +104,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fragment_specialist_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
         tools:itemCount="8"
         tools:listitem="@layout/item_doctor">
     </androidx.recyclerview.widget.RecyclerView>

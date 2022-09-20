@@ -33,16 +33,16 @@ class HomeFragment : Fragment() {
                     R.drawable.ico_general.toString()),
                 ServiceModel(
                     "2","Especialista","Los Mejores medicos especialistas",
-                    R.drawable.ico_general.toString()),
+                    R.drawable.ico_especialidades.toString()),
                 ServiceModel(
                    "3","Odontologia","Los Mejores especialistas en odontologia",
-                    R.drawable.ico_general.toString()),
+                    R.drawable.ico_odontologia.toString()),
                 ServiceModel(
                     "4","Dermatologia","Los Mejores especialistas en dermatologia",
-                    R.drawable.ico_general.toString()),
+                    R.drawable.ico_dermatologia.toString()),
                 ServiceModel(
                     "5","Pediatria","Los Mejores especialistas en pediatria",
-                    R.drawable.ico_general.toString())
+                    R.drawable.ico_pediatria.toString())
             )
         )
         serviceAdapter.listener = object : OnServiceClickListener{

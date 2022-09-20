@@ -26,11 +26,12 @@
     <string name="banner_title">CAMBIA TU VIDA PARA MEJOR</string>
     <string name="home_text_subtitle">Agenda una cita y te ayudaremos con el problema que te enfrentes</string>
     <string name="nuestros_servicios">Nuestros Servicios</string>
+    <string name="nuestros_especialistas">Nuestros Especialistas</string>
     <string name="item_service_paragraph">Los mejores especialistas en medicina general</string>
     <string name="general">General</string>
     <string name="specialist_tittle">Especialidades</string>
     <string name="specialits_subtittle">Los Mejores especialistas en todas las areas</string>
     <string name="search">Buscar</string>
-    <string name="generic_specialist_title">"Nuestros Especialistas</string>
+    <string name="generic_specialist_title">NUESTROS ESPECIALISTAS</string>
     <string name="generic_specialist_subtitle">"Agenda una cita con la especialidad de tu preferencia"</string>
 </resources>
