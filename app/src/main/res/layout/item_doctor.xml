@@ -5,74 +5,93 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/item_doctor_icon"
-        android:layout_width="@dimen/service_icon_size"
-        android:layout_height="@dimen/service_icon_size"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginVertical="@dimen/medium_margin"
-        android:layout_marginStart="@dimen/small_margin"
-        tools:srcCompat="@drawable/doc4_283x425"
-        android:scaleType="fitCenter"
-        />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/item_doctor_especialidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/item_doctor_icon"
-        app:layout_constraintLeft_toRightOf="@id/item_doctor_icon"
-        android:layout_marginStart="@dimen/medium_margin"
-
-        tools:text="@string/general"
-        style="@style/textPrimary.MinTicAplication"/>
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/item_doctor_name"
-        android:layout_width="@dimen/auto"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/item_doctor_especialidad"
-        app:layout_constraintStart_toStartOf="@+id/item_doctor_especialidad"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:text="Dra. Elena Garcia"
-        android:textSize="@dimen/default_text"
-        />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/item_doctor_sumary"
-        android:layout_width="@dimen/auto"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/item_doctor_name"
-        app:layout_constraintStart_toEndOf="@+id/item_doctor_ratingbar"
-        app:layout_constraintTop_toTopOf="@id/item_doctor_ratingbar"
-        app:layout_constraintBottom_toBottomOf="@id/item_doctor_ratingbar"
-        tools:text="Dra. Elena Garcia"
-        android:textColor="@color/black"
-        android:textSize="@dimen/tiny_text"
-        android:layout_marginHorizontal="@dimen/small_margin"
-        />
-
-    <RatingBar
-        android:id="@+id/item_doctor_ratingbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/item_doctor_name"
-        app:layout_constraintStart_toEndOf="@id/item_doctor_icon"
-        android:numStars="1"
-        android:rating="1"
-        android:layout_marginHorizontal="@dimen/medium_margin"
-        style="?attr/ratingBarStyleSmall"/>
-
     <View
         android:layout_width="0dp"
-        android:layout_height="1dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="@dimen/tiny_padding"
+        app:layout_constraintTop_toBottomOf="@id/doctor_card_view"
+        android:layout_marginTop="@dimen/small_margin"
         android:background="@color/grey"
         />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/doctor_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/service_icon_size"
+        android:layout_marginTop="@dimen/medium_margin"
+        app:cardElevation="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/item_doctor_icon"
+                android:layout_width="@dimen/service_icon_size"
+                android:layout_height="@dimen/service_icon_size"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginVertical="@dimen/medium_margin"
+                android:layout_marginStart="@dimen/small_margin"
+                tools:srcCompat="@drawable/doc4_283x425"
+                android:scaleType="fitCenter"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/item_doctor_especialidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/item_doctor_icon"
+                app:layout_constraintLeft_toRightOf="@id/item_doctor_icon"
+                android:layout_marginStart="@dimen/medium_margin"
+
+                tools:text="@string/general"
+                style="@style/textPrimary.MinTicAplication"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/item_doctor_name"
+                android:layout_width="@dimen/auto"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/item_doctor_especialidad"
+                app:layout_constraintStart_toStartOf="@+id/item_doctor_especialidad"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Dra. Elena Garcia"
+                android:textSize="@dimen/default_text"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/item_doctor_sumary"
+                android:layout_width="@dimen/auto"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/item_doctor_name"
+                app:layout_constraintStart_toEndOf="@+id/item_doctor_ratingbar"
+                app:layout_constraintTop_toTopOf="@id/item_doctor_ratingbar"
+                app:layout_constraintBottom_toBottomOf="@id/item_doctor_ratingbar"
+                tools:text="Dra. Elena Garcia"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tiny_text"
+                android:layout_marginHorizontal="@dimen/small_margin"
+                />
+
+            <RatingBar
+                android:id="@+id/item_doctor_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/item_doctor_name"
+                app:layout_constraintStart_toEndOf="@id/item_doctor_icon"
+                android:numStars="1"
+                android:rating="1"
+                android:layout_marginHorizontal="@dimen/medium_margin"
+                style="?attr/ratingBarStyleSmall"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

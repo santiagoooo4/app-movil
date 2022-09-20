@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primario">#FF22577A</color>
-    <color name="varianteprimaria">#FF38A3A5</color>
+    <color name="varianteprimaria">#FF22577A</color>
+    <color name="primario">#FF03878c</color>
     <color name="primaryligth">#FF80ED99</color>
     <color name="secundario">#FF42C2FF</color>
     <color name="varianteSecundaria">#FF85F4FF</color>

@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
+    android:background="@drawable/backgroundgreentheme">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/fragment_home_banner"
@@ -15,7 +16,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/banner900x360"
-        tools:ignore="ImageContrastCheck"></com.google.android.material.imageview.ShapeableImageView>
+        tools:ignore="ImageContrastCheck">
+
+    </com.google.android.material.imageview.ShapeableImageView>
 
     <TextView
         android:id="@+id/fragment_home_title"
@@ -33,7 +36,7 @@
         android:layout_width="@dimen/auto"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/big_margin"
-        android:layout_marginVertical="@dimen/big_margin"
+        android:layout_marginVertical="@dimen/medium_margin"
         android:gravity="center"
         android:text="@string/home_text_subtitle"
         android:textAppearance="@style/subTitle.Mintic."
@@ -46,19 +49,22 @@
         android:id="@+id/fragment_home_service_list"
         android:layout_width="@dimen/auto"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/medium_margin"
+        android:layout_marginHorizontal="@dimen/big_margin"
         android:text="@string/nuestros_servicios"
+        android:textAppearance="@style/subTitle.Mintic."
+        android:textColor="@color/primario"
         app:layout_constraintTop_toBottomOf="@id/fragment_home_subtitle"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginVertical="@dimen/big_margin"
-        android:layout_marginHorizontal="@dimen/big_margin"
-        android:textAlignment="center"
-        android:textAppearance="@style/serviceList.Mintic."/>
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:textAlignment="center"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/fragment_home_recycler"
         android:layout_width="@dimen/auto"
         android:layout_height="@dimen/auto"
         android:paddingHorizontal="@dimen/small_margin"
+        android:layout_marginTop="@dimen/medium_margin"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
