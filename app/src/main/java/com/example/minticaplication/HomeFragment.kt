@@ -1,16 +1,20 @@
 package com.example.minticaplication
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.minticaplication.databinding.FragmentHomeBinding
+import com.example.minticaplication.ServiceAdapter
 
 class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
     private var _binding: FragmentHomeBinding? = null
     private val binding: FragmentHomeBinding get() = _binding!!
+    private lateinit var  serviceAdapter: ServiceAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -22,6 +26,37 @@ class HomeFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-
+        serviceAdapter = ServiceAdapter(
+            listOf(
+                ServiceModel(
+                    "1","General","Los Mejores especialistas en medicina general",
+                    R.drawable.ico_general.toString()),
+                ServiceModel(
+                    "2","Especialista","Los Mejores medicos especialistas",
+                    R.drawable.ico_general.toString()),
+                ServiceModel(
+                   "3","Odontologia","Los Mejores especialistas en odontologia",
+                    R.drawable.ico_general.toString()),
+                ServiceModel(
+                    "4","Dermatologia","Los Mejores especialistas en dermatologia",
+                    R.drawable.ico_general.toString()),
+                ServiceModel(
+                    "5","Pediatria","Los Mejores especialistas en pediatria",
+                    R.drawable.ico_general.toString())
+            )
+        )
+        serviceAdapter.listener = object : OnServiceClickListener{
+            override fun onClick(item: ServiceModel) {
+                val action = HomeFragmentDirections.actionHomeFragmentToEspcialistFragment()
+                action.search =false
+                action.name = item.title
+                action.description = item.descripcion
+                findNavController().navigate(action)
+            }
+        }
+        binding.fragmentHomeRecycler.apply {
+            adapter = serviceAdapter
+            layoutManager = LinearLayoutManager(requireContext())
+        }
     }
 }
