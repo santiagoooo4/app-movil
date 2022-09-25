@@ -32,6 +32,7 @@ class EspcialistFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
+        doctorList = listOf()
         categorias = listOf(
             "Todos", "Optometria", "Especialista", "Odontologia", "Pediatria", "General"
         )
@@ -53,10 +54,33 @@ class EspcialistFragment : Fragment() {
                 R.drawable.ico_general.toString(), 1.0)
         )
         if (args.search){
+            Log.d("barra", "activada")
             binding.fragmentSpecialistSearch.visibility = View.VISIBLE
             binding.fragmentSpecialistTittleList.visibility = View.GONE
             binding.fragmentSpecialistTitle.text = getString(R.string.generic_specialist_title)
             binding.fragmentSpecialistSubtitle.text = getString(R.string.generic_specialist_subtitle)
+
+            // creacion del adaptador para el autocomplete
+            binding.fragmentSpecialistAutocomplete.setAdapter(
+                ArrayAdapter(requireContext(), android.R.layout.simple_dropdown_item_1line, categorias)
+            )
+            Log.d("autocomplete", "creado")
+
+            binding.fragmentSpecialistAutocomplete.setOnItemClickListener { parent, view, position, l ->
+                val category = categorias[position]
+                if (category == "Todos"){
+                    doctorList = mainList.toList()
+                    Log.d("por aca", "por aqui")
+                    for (item in doctorList) {
+                        Log.d("lista", item.name)
+                    }
+
+                } else {
+                    doctorList = mainList.filter { x -> x.especialidad == category }
+                }
+                doctorAdapter.UpdateSet(doctorList)
+            }
+
         }else{
             binding.fragmentSpecialistSearch.visibility = View.GONE
             binding.fragmentSpecialistTittleList.visibility = View.VISIBLE
@@ -64,19 +88,12 @@ class EspcialistFragment : Fragment() {
             binding.fragmentSpecialistSubtitle.text = args.description
             doctorList = mainList.filter { x -> x.especialidad == args.name }
         }
-        // creacion del adaptador para el autocomplete
-        binding.fragmentSpecialistAutocomplete.setAdapter(
-            ArrayAdapter(requireContext(), android.R.layout.simple_dropdown_item_1line, categorias)
-        )
-        binding.fragmentSpecialistAutocomplete.setOnItemClickListener { parent, view, position, l ->
-            val category = categorias[position]
-            if(category == "Todos")
-                doctorList = mainList
-            else
-                doctorList = mainList.filter { x -> x.especialidad == category } 
-            doctorAdapter.UpdateSet(doctorList)
+        Log.d("lista", "inicio lista por fuera")
+        for (item in doctorList) {
+            Log.d("lista", item.name)
         }
-        doctorAdapter = DoctorAdapter(mainList)
+
+        doctorAdapter = DoctorAdapter(doctorList)
 
         doctorAdapter.listener = object : OnDoctorClickListener{
             override fun onClick(doctor: DoctorModel) {
@@ -87,8 +104,5 @@ class EspcialistFragment : Fragment() {
             adapter = doctorAdapter
             layoutManager = LinearLayoutManager(requireContext())
         }
-
-
-
     }
 }
