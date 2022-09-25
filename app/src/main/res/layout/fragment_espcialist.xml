@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/especialistas"
+        app:srcCompat="@drawable/banner_especialistas"
         android:scaleType="fitXY"/>
 
     <TextView
@@ -61,14 +61,11 @@
             android:text="@string/nuestros_especialistas"
             android:textAppearance="@style/subTitle.Mintic."
             android:textColor="@color/primario"
-
             android:visibility="visible"
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-
             tools:visibility="visible">
 
         </TextView>
