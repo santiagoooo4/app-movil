@@ -2,7 +2,7 @@
     <string name="app_name">MinTicAplication</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="contentDescription_logo">Logo de aplicación</string>
-    <string name="hint_email">Correo Electronic</string>
+    <string name="hint_email">Correo Electronico</string>
     <string name="Password_hint">Password</string>
     <string name="forgot_passwd">olvidaste la contraseña</string>
     <string name="ingresar">Ingresar</string>

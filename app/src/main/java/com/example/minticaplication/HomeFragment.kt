@@ -48,7 +48,7 @@ class HomeFragment : Fragment() {
         serviceAdapter.listener = object : OnServiceClickListener{
             override fun onClick(item: ServiceModel) {
                 val action = HomeFragmentDirections.actionHomeFragmentToEspcialistFragment()
-                action.search =false
+                action.search = false
                 action.name = item.title
                 action.description = item.descripcion
                 findNavController().navigate(action)

@@ -84,9 +84,8 @@
                 android:id="@+id/fragment_specialist_autocomplete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/search"
                 android:inputType="none"
-                />
+                android:hint="@string/search"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 

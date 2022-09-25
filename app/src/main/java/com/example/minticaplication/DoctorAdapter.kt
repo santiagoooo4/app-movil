@@ -5,9 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.minticaplication.databinding.ItemDoctorBinding
 
-class DoctorAdapter(val list: List<DoctorModel>): RecyclerView.Adapter<DoctorAdapter.ViewHolder>() {
-    class ViewHolder(val view: ItemDoctorBinding): RecyclerView.ViewHolder(view.root)
+class DoctorAdapter(var list: List<DoctorModel>): RecyclerView.Adapter<DoctorAdapter.ViewHolder>() {
 
+    class ViewHolder(val view: ItemDoctorBinding): RecyclerView.ViewHolder(view.root)
     var listener: OnDoctorClickListener? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DoctorAdapter.ViewHolder {
@@ -30,4 +30,8 @@ class DoctorAdapter(val list: List<DoctorModel>): RecyclerView.Adapter<DoctorAda
         return list.size
     }
 
+    fun UpdateSet(newList: List<DoctorModel>) {
+        this.list = newList
+        notifyDataSetChanged()
+    }
 }

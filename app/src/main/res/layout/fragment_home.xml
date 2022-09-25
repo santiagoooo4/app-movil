@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/banner900x360"
+        app:srcCompat="@drawable/banner_home"
         tools:ignore="ImageContrastCheck">
 
     </com.google.android.material.imageview.ShapeableImageView>
