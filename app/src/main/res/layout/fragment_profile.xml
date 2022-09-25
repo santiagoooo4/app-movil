@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginVertical="@dimen/big_margin"
-        android:src="@drawable/profile"
+        android:background="@color/white"
         app:strokeWidth="@dimen/stroke"
         app:strokeColor="@color/grey"
         app:shapeAppearance="@style/round_image"
